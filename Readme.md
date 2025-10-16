@@ -19,3 +19,6 @@ O projeto foi desenvolvido por Leonardo E. Mamede da Silva e Letícia Francisca 
 As etapas realizadas incluíram: planejamento e definição do público-alvo e objetivos, realizados por Leonardo e Letícia em 09/10/2025; criação do design no Figma, realizada por ambos em 14/10/2025; desenvolvimento do código do site, realizado por Leonardo em 15/10/2025; e elaboração do README e documentação, realizada por Letícia em 15/10/2025.
 
 As escolhas de design foram cuidadosamente justificadas: as fontes foram escolhidas por serem simples e contemporâneas, garantindo boa legibilidade e harmonia com o estilo minimalista do site. As cores preto, branco e cinza foram selecionadas para transmitir profissionalismo, limpeza, sofisticação e modernidade, reforçando a identidade visual da Garage Detail. Os botões do menu posicionados no topo facilitam a navegação e tornam a experiência do usuário intuitiva, enquanto ícones próximos aos textos reforçam a compreensão visual dos serviços. O layout, com barra de navegação no topo, seções bem definidas e uso de imagens atrativas, permite que o visitante encontre informações rapidamente e navegue de forma agradável pelo site.
+
+https://www.figma.com/design/IEvhcYl8z9TRqXywaucs3Z/Projeto-Integrador?node-id=0-1&t=aa20TCKRnKUGdYJj-1 
+link do Figma como o site deveria. 
