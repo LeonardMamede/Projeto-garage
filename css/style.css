@@ -14,7 +14,7 @@ body {
 
 img {
     max-width: 100%;
-    display: block; 
+    display: flex; 
 }
 
 a {
@@ -24,7 +24,6 @@ a {
 
 /* --- TÍTULO DAS SEÇÕES --- */
 .section-title {
-    font-family: 'Anton', sans-serif;
     text-align: center;
     font-size: 2rem;
     margin-bottom: 40px;
@@ -34,7 +33,7 @@ a {
 
 /* --- CABEÇALHO --- */
 .main-header {
-    background-color: #fff;
+    background-color: #f1f1f1;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -54,8 +53,9 @@ a {
 }
 
 .header-logo-main img {
-    height: 80px; /* Aumentado para melhor visual */
+    height: 60px; /* Aumentado para melhor visual */
     width: auto; 
+    
 }
 
 .menu-icon img {
@@ -89,12 +89,12 @@ a {
     margin-bottom: 10px;
 }
 
-/* --- SEÇÕES DE CONTEÚDO --- */
+
 .content-section {
     padding: 30px 20px;
 }
 
-/* --- SEÇÃO DE OFERTAS --- */
+
 .ofertas-container {
     display: flex;
     justify-content: center;
@@ -122,7 +122,7 @@ a {
     font-weight: 400;
 }
 
-/* --- SEÇÃO DE AGENDAMENTO --- */
+
 .booking-form {
     max-width: 500px;
     margin: 0 auto;
@@ -156,7 +156,7 @@ a {
     cursor: pointer;
 }
 
-/* --- RODAPÉ --- */
+
 .main-footer {
     background-color: #000;
     padding: 20px;
@@ -170,27 +170,20 @@ a {
     height: 35px;
     width: auto;
 }
-
-/* --- MEDIA QUERIES (TABLETS E DESKTOPS) --- */
-@media (min-width: 768px) {
-    .section-title { font-size: 2.5rem; }
-    .quick-nav { gap: 40px; }
-    .nav-icon { width: 100px; height: 100px; }
-    .ofertas-container { flex-wrap: nowrap; gap: 50px; }
-    .oferta img { width: 250px; height: 250px; }
-    .oferta_1, .oferta_2 { font-size: 1.5rem; }
+aside {
+  display: flex;
 }
 
-@media (min-width: 1024px) {
-    body {
-        max-width: 1200px;
-        margin: 0 auto; 
-        box-shadow: 0 0 10px rgba(0,0,0,0.1); 
- }
 .content-section {padding: 50px 20px;}
 .main-header, .quick-nav, .main-footer { 
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     }
+.mapa{
+    display: block;
+    margin: 40px auto;
+    border: 2px solid #000;
+    border-radius: 50px;
+    width: 50%;
 }

@@ -10,82 +10,60 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <iframe src="componentes/header.html"style="display:none;"></iframe>
 
-    <header class="main-header">
-        <div class="header-logo-small">
-            <img src="img/IMG_0631.JPEG" alt="Logo Garage Detail">
-        </div>
-        <div class="header-logo-main">
-            <img src="img/IMG_0633.JPEG" alt="Garage Detail">
-        </div>
-        <div class="menu-icon">
-            <img src="img/menu-icon.png" alt="Menu">
-        </div>
-    </header>
+    <div id="header-container"></div>
 
-    <nav class="quick-nav">
-        <a href="index.html" class="nav-item">
-            <img src="img/carroRED.jpg" alt="Início" class="nav-icon">
-            <span>INÍCIO</span>
-        </a> 
-        <a href="sobre.html" class="nav-item">
-            <img src="img/IMG_0632.JPEG" alt="Sobre" class="nav-icon">
-            <span>SOBRE</span>
-        </a> 
-        <a href="servicos.html" class="nav-item">
-            <img src="img/meninaLJ.jpg" alt="Serviços" class="nav-icon">
-            <span>SERVIÇOS</span>
-        </a>
-    </nav>
+    <div id="nav-container"></div>
+    
+    
 
     <main>
-        <section class="content-section">
-            <h2 class="section-title">OFERTAS ESPECIAIS</h2>
-            <div class="ofertas-container">
-                <div class="oferta">
-                    <img src="img/lavangem.jpg" alt="Lavagem estética e polimento de faróis">
-                    <div class="oferta_2">
-                        <p>Lavagem estética</p>
-                        <p>Polimento de faróis</p>
-                    </div>
-                </div>
-                <div class="oferta">
-                    <img src="img/polimento.jpg" alt="Polimento e Higienização">
-                    <div class="oferta_1">
-                        <p>Polimento + Higienização</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div id="ofertas-container"></div>
 
         <section class="content-section">
             <h2 class="section-title">AGENDAMENTO ONLINE</h2>
-            <form class="booking-form">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome">
-                
-                <label for="whatsapp">WhatsApp:</label>
-                <input type="tel" id="whatsapp" name="whatsapp">
-                
-                <label for="modelo">Modelo/Placa:</label>
-                <input type="text" id="modelo" name="modelo">
-                
-                <label for="data">Data/Horário:</label>
-                <input type="text" id="data" name="data">
-                
-                <label for="servico">Serviço a ser prestado:</label>
-                <input type="text" id="servico" name="servico">
+            <form class="booking-form"  
+  action="https://formspree.io/f/xvgdgzbd"
+  method="POST">
+ l <abel>
+    Seu email:
+<input type="email" name="email">
+  </label>
 
-                <button type="submit">Enviar</button>
+<label for="nome">Nome:</label>
+ <input type="text" id="nome" name="nome">
+                
+<label for="whatsapp">WhatsApp:</label>
+ <input type="tel" id="whatsapp" name="whatsapp">
+                
+<label for="modelo">Modelo/Placa:</label>
+<input type="text" id="modelo" name="modelo">
+                
+<label for="data">Data/Horário:</label>
+<input type="text" id="data" name="data">
+                
+<label for="servico">Serviço a ser prestado:</label>
+<input type="text" id="servico" name="servico">
+
+  <button type="submit">Confirmar</button>
+
             </form>
         </section>
     </main>
 
-    <footer class="main-footer">
-        <div class="footer-logo">
-            <img src="img/IMG_0630.JPEG" alt="Garage Detail">
-        </div>
-    </footer>
-
+    <div id="aside-container"></div>
+     <div id="footer-container"></div> 
 </body>
+   
+<script src="js/componentes.js"></script>
+<script>
+    carregarComponente('componentes/header.html', '#header-container');
+    carregarComponente('componentes/nav.html', '#nav-container');
+    carregarComponente('componentes/ofertas.html', '#ofertas-container');
+    carregarComponente('componentes/footer.html', '#footer-container');
+    carregarComponente('componentes/aside.html', '#aside-container');
+</script>
+
+
 </html>
