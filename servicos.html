@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garage Detail</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+   <div id="header-container"></div>
+
+    <div id="nav-container"></div>
+
+  <main>
+
+    <section class="content-section">
+        <h2 class="section-title">NOSSOS SERVIÇOS</h2>
+        <div class="services-container">
+            <div class="service">
+                <h3>Lavagem Estética</h3>
+                <p>Lavagem completa do veículo, incluindo limpeza interna e externa, remoção de sujeiras difíceis e aplicação de produtos de proteção.</p>
+            </div>
+            <div class="service">
+                <h3>Polimento</h3>
+                <p>Restauração da pintura do veículo, removendo riscos e imperfeições, proporcionando um acabamento brilhante e protegido.</p>
+            </div>
+            <div class="service">
+                <h3>Higienização Interna</h3>
+                <p>Limpeza profunda do interior do veículo, incluindo estofados, carpetes e painéis, eliminando odores e bactérias.</p>     
+            </div>
+            <div class="service">
+                <h3>Proteção de Pintura</h3>
+                <p>Aplicação de películas protetoras ou ceras especiais para preservar a pintura do veículo contra danos ambientais.</p>    
+
+            </div>
+        </div>
+    </section>
+
+
+    
+  </main>
+    <div id="aside-container"></div>
+        
+    <div id="footer-container"></div>
+</body>
+<script src="js/componentes.js"></script>
+<script>
+    carregarComponente('componentes/header.html', '#header-container');
+    carregarComponente('componentes/nav.html', '#nav-container');
+    carregarComponente('componentes/footer.html', '#footer-container');
+    carregarComponente('componentes/aside.html', '#aside-container');
+</script>
+</html>
