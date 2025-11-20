@@ -13,7 +13,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <iframe src="/componentes/header.html"style="display:none;"></iframe>
 
     <div id="header-container"></div>
 
@@ -67,9 +66,7 @@
     <div id="aside-container"></div>
      <div id="footer-container"></div> 
 </body>
-   <script>
-     const formulario=document.getElementById("form-agendamento");formulario?formulario.addEventListener("submit",async function(e){e.preventDefault();let o=formulario.querySelector("button"),r=o.innerText;o.innerText="Enviando...",o.disabled=!0;let n=new FormData(e.target);try{let t=await fetch(e.target.action,{method:formulario.method,body:n,headers:{Accept:"application/json"}});t.ok?(alert("Agendamento enviado com sucesso!"),formulario.reset()):alert("Erro ao enviar. Tente novamente.")}catch(a){console.error(a),alert("Erro de conex\xe3o.")}finally{o.innerText=r,o.disabled=!1}}):console.error("Erro: Formul\xe1rio n\xe3o encontrado. Verifique o ID no HTML.");
-</script>
+   <script src="/js/formulario.js"></script>
 <script src="/js/componentes.js"></script>
 <script>
     carregarComponente('componentes/header.html', '#header-container');
